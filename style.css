@@ -200,23 +200,19 @@ header {
 
 footer {
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 20px;
     margin-top: 60px;
-    height: 100%;
 }
 
-.Footer-Container{
-    max-width: 1440px;
+.Footer-Container {
     display: flex;
-    
-    margin: 0;
     justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
+
 .Find-A-Store {
     display: flex;
     flex-direction: column;
@@ -425,4 +421,53 @@ footer {
 
 .card-btn:hover {
     background-color: #e5e5e5;
+}
+
+/* начало Sale */
+.Nav-Sales-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.Sales {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 5px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Just-In{
+    color: red;
+    margin: 5px 0px 5px 0px;
+}
+.Product-card-Name{
+    margin: 5px 0px 5px 0px;
+}
+.Type-Shoe{
+    margin: 5px 0px 5px 0px;
+    color: grey;
+}
+.Colors{
+    margin: 5px 0px 10px 0px;
+    color: grey;
+}
+.Cena{
+    margin: 0px 0px 50px 0px;
+}
+
+.navigation, a{
+    all: unset;
+  cursor: pointer;
+  font-size: 18px;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
