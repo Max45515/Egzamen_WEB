@@ -200,7 +200,7 @@ header {
 
 footer {
     background-color: black;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     margin-top: 60px;
 }
 
@@ -211,6 +211,7 @@ footer {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .Find-A-Store {
@@ -339,7 +340,7 @@ footer {
 .product-image {
     background-color: #f6f6f6;
     margin: 0;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
