@@ -16,7 +16,6 @@ input {
     margin: 0 auto;
     /* padding: 0 20px; */
 }
-
 /* HEADER */
 
 .Logo-Nike {
@@ -29,7 +28,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    /* margin: 20px; */
+    /* padding: 0 40px; */
+    background-color: #fff;
 }
 
 .Links-IN-Header {
@@ -44,12 +44,68 @@ header {
     text-decoration: none;
 }
 
-
-
 .Search-Likes {
     display: flex;
     align-items: center;
 }
+
+.User-Icons {
+    display: flex;
+    gap: 20px;
+}
+
+.Burger-Checkbox {
+    display: none;
+}
+
+.Burger-Menu {
+    display: none;
+    cursor: pointer;
+}
+
+.Burger-Menu img {
+    width: 24px;
+    height: auto;
+}
+
+@media (width <= 600px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .Search-Likes,
+    .User-Icons {
+        display: none;
+    }
+
+    .Burger-Menu {
+        display: block;
+    }
+
+    .Links-IN-Header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        transform: translateY(-150%);
+        opacity: 1;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+
+    }
+
+    .Burger-Checkbox:checked ~ .Links-IN-Header {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 
 /* FORMS */
 
@@ -164,6 +220,7 @@ header {
 .form-terms a {
     color: #8D8D8D;
     text-decoration: underline;
+    font-size: 12px;
 }
 
 .submit-btn {
@@ -191,9 +248,10 @@ header {
 }
 
 .join-us a {
-    color: #000;
+    color: #333;
     text-decoration: underline;
     font-weight: bold;
+    font-size: 12px;
 }
 
 /* FOOTER */
@@ -313,8 +371,6 @@ footer {
     border: none;
     padding: 0;
     margin: 0;
-    font: inherit;
-    color: inherit;
     cursor: pointer;
     outline: none;
 }
@@ -328,6 +384,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    margin-top: 15px;
 }
 
 
@@ -424,6 +481,32 @@ footer {
     background-color: #e5e5e5;
 }
 
+@media(width <= 600px){
+    .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+    .products-section{
+        text-align: center;
+    }
+    .products-grid{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: start;
+        
+    }
+    .product-price{
+        margin-top: 1%;
+    }
+    .essentials-section{
+        text-align: center;
+    }
+    .essentials-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /* начало Sale */
 .Nav-Sales-container{
     
@@ -471,4 +554,15 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+
+
+@media (width <= 600px) {
+    .Footer-Container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        gap: 15px; 
+    }
 }
