@@ -526,6 +526,10 @@ footer a{
     .Burger-Checkbox:checked ~ .Links-IN-Header {
         transform: translateY(0);
     }
+    .Nav-Sales-container{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* MOBILE */
