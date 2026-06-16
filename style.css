@@ -107,7 +107,7 @@ header {
     width: 100%;
     margin: 60px auto;
     text-align: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 }
 
 .form-logo {
@@ -162,8 +162,6 @@ header {
     position: absolute;
     width: 1px;
     height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
 }
 
 .checkbox-box {
@@ -298,7 +296,7 @@ footer a{
 
 .MainImg img {
     display: block;
-    /* width: 100%; */
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -360,7 +358,7 @@ footer a{
 }
 
 .product-image img {
-    /* max-width: 100%; */
+    max-width: 100%;
     height: auto;
 }
 
@@ -402,7 +400,7 @@ footer a{
 
 .essential-card {
     position: relative;
-    /* width: 100%; */
+    width: 100%;
     overflow: hidden;
 }
 
@@ -444,7 +442,7 @@ footer a{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 5px;
-    padding: 20px;
+    /* padding: 20px; */
     width: 100%;
     box-sizing: border-box;
 }
@@ -476,6 +474,7 @@ footer a{
     all: unset;
     cursor: pointer;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .navigation {
@@ -497,7 +496,7 @@ footer a{
         grid-template-columns: repeat(2, 1fr);
     }
     .container{
-        max-width: 90%;
+        max-width: 80%;
     }
     .Search-Likes,
     .User-Icons {
@@ -529,6 +528,17 @@ footer a{
     .Nav-Sales-container{
         flex-direction: column;
         text-align: center;
+    }
+    .Footer-Container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .Sales{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
     }
 }
 
