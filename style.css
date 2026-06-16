@@ -253,6 +253,16 @@ footer {
     background-color: black;
     margin-top: 60px;
 }
+footer a{
+    color: grey;
+}
+.Main-Test-IN-Footer{
+    color: white;
+}
+.Find-A-Store a{
+    color: white;  
+}
+
 
 .Footer-Container {
     display: flex;
@@ -271,6 +281,7 @@ footer {
     flex-direction: column;
     gap: 15px;
 }
+
 
 .Social {
     display: flex;
