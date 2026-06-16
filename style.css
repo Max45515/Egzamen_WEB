@@ -298,7 +298,7 @@ footer a{
 
 .MainImg img {
     display: block;
-    width: 100%;
+    /* width: 100%; */
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -360,7 +360,7 @@ footer a{
 }
 
 .product-image img {
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
 }
 
@@ -402,7 +402,7 @@ footer a{
 
 .essential-card {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
 }
 
