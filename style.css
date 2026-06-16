@@ -516,6 +516,13 @@ footer {
     margin-top: 50px;
 }
 
+@media(width <= 600px){
+    .Nav-Sales-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
 .Sales {
     margin: 15px;
     display: grid;
